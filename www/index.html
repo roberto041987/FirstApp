@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Il mio JQuery - Le basi</title>
+		
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script>
+$(document).on("mobileinit", function(){
+$.mobile.defaultPageTransition="slidedown";
+
+});
+</script>
+
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  
+  
+  
+  
+  
+  </head>
+  
+  
+  <body>
+  
+   <div data-role="panel" data-position="left" data-display="reveal" id="myMenu">
+   <ul data-role="listview" data-theme="a">
+   
+   <li data-role="list divider">Pagine</li>
+   <li><a href="#home">Home</a></li>
+   <li><a href="#bottoni">Bottoni</a></li>
+   <li><a href="#icone">Icone</a></li>
+   <li><a href="#form">Form</a></li>
+   <li><a href="#grid">Grid System</a></li>
+   </ul>
+   </div>
+   
+   <!-- prima pagina - Home-->
+    <div id="home" data-role="page">
+	   
+	   
+	   <div data-role="header"data-theme="b">
+	   <a href="#myMenu" class="ui-btn ui-icon-bars ui-btn-icon-left ui-btn-icon-notext ui-corner-all">Menu</a>
+	   <h1>Home</h1>
+	   
+	   
+	   </div>
+	   
+	   <div data-role="content">
+	   <p>lorem</p>
+	   <h1>Esempio di listview</h1>
+	   
+	   <ul data-role="listview" data-inset="true" data-split-icon="cloud" data-split-theme="b">
+	   
+	   <li data-icon="check">
+	   
+	   <a href="#">
+	   
+	   <img src="img/finger.png">
+	   Primo elemento</a>
+	   
+	   <a href="#">Esempio 1</a>
+	   
+	   </li>
+	   <li><a href="#">
+	   
+	   <img src="img/smile.png">
+	   Secondo elemento</a>
+	   <a href="#">Esempio 2</a>
+	   
+	   </li>
+	   
+	   
+	   </ul>
+	   
+	   
+	   <h1>Listview in div collassabile</h1>
+	   
+	   <div data-role="collapsible" data-inset="true">
+	   <h1>Animali</h1>
+	   <ul data-role="listview">
+	   
+	   <li><a href="#">Tyson</a></li>
+	   <img src="img/tyson.jpg" style="width: 50%;">
+	     <li><a href="#">Marylin</a></li>
+		 <img src="img/marylin.jpg" style="width: 50%;">
+		   <li><a href="#">Briciola</a></li>
+		   <img src="img/briciola.jpg" style="width: 50%;">
+	   
+	   </ul>
+	   
+	   
+	   </div>
+	   
+	   <div data-role="collapsible" data-inset="true">
+	   <h1>Persone</h1>
+	   <ul data-role="listview">
+	   
+	   <li><a href="#">Claudia</a></li>
+	    <img src="img/claudia.jpg" style="width: 50%;">
+	     <li><a href="#">Roberto</a></li>
+		 <img src="img/roberto.jpg" style="width: 50%;">
+		 
+	   
+	   </ul>
+	   
+	   
+	   </div>
+	   
+	   </div>
+	   
+	   <div data-role="footer" data-position="fixed"><h4>&copy 2018</h4></div>
+	   </div>
+	   
+	   <a href="popup.html">Pop up</a>
+	   
+	   <!-- seconda pagina - Bottoni-->
+    <div id="bottoni" data-role="page">
+	   
+	   
+	   <div data-role="header"data-theme="b">
+	   <a href="#myMenu">Menu</a>
+	   <h1>Bottoni</h1>
+	   
+	   
+	   </div>
+	   
+	   <div data-role="content">
+<button class="ui=btn ui-corner-all ui-shadow">Clicca</button>
+
+
+<button class="ui=btn ui-corner-all ui-shadow ui-btn-inline ui-icon-camera ui-btn-icon-right">Clicca</button><br>
+<a href="#home" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn-inline">Home</a>
+
+<a href= "#icone" class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn-inline">Scheda seguente</a>
+	   
+	   </div>
+	   
+	   <div data-role="footer" data-position="fixed"><h4>&copy 2018</h4></div>
+	   </div>
+	   
+	  
+	     <!-- terza pagina - Icone-->
+    <div id="icone" data-role="page">
+	   
+	   
+	   <div data-role="header"data-theme="b">
+	   <a href="#myMenu">Menu</a>
+	   <h1>Icone</h1>
+	   
+	   
+	   </div>
+	   
+	   <div data-role="content">
+<h1>Esempi di icone</h1>
+<h3>Se vuoi vedere il codice degli esempi clicca sulle icone</h3>
+
+
+<a data-role="button" href= "#dlg-bottoni" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn-inline ui-btn-icon-notext">Esempio di bottone notext</a>
+
+<a data-role="button" href= "#form" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-btn-inline ui-btn-icon-notext">Scheda seguente</a> <br>
+
+<a data-role="button" href= "#dlg-bottoni" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn-inline ui-btn-icon-notext">Esempio di bottone notext</a>
+
+<a data-role="button" href= "#dlg-bottoni" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-btn-inline ui-btn-icon-notext">Scheda seguente</a> <br>
+
+
+<a data-role="button" href= "#bottoni" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn-inline">Scheda precedente</a>
+
+<a data-role="button" href= "#form" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-btn-inline">Scheda seguente</a>
+
+<a href="#home" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left">Home</a>
+
+	   </div>
+	   
+	   <div data-role="footer" data-position="fixed"><h4>&copy 2018</h4></div>
+	   </div>
+	   
+	   
+	    <!-- Quarta pagina - Form-->
+    <div id="form" data-role="page">
+	   
+	   
+	   <div data-role="header"data-theme="b">
+	   <a href="#myMenu">Menu</a>
+	   <h1>Form</h1>
+	   
+	   
+	   </div>
+	   
+	   <div data-role="content">
+<h1>Esempi di form</h1>
+
+<a data-role="button" href= "#bottoni" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn-inline ui-btn-icon-notext">Scheda precedente</a>
+
+<a data-role="button" href= "#icone" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-btn-inline ui-btn-icon-notext">Scheda seguente</a>
+
+<a href="#home" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left">Home</a>
+
+<h3>form base</h3>
+	
+	<form>
+	<label for="nome" class="ui-hidden-accessible">Nome: </label>
+	
+	<input type="text" name="nome" placeholder="scrivi il tuo nome">
+	
+	
+	<label for="cognome">Cognome: </label>
+	
+	<input type="text" name="cognome" placeholder="scrivi il tuo cognome">
+	
+	
+	<label for="email">Email: </label>
+	
+	<input type="email" name="email" placeholder="scrivi il tuo email">
+	
+	<label for="info">Messaggio: </label>
+	
+	<textarea rows="30" name="messaggio" placeholder="messaggio"></textarea>
+	
+	<input type="reset" value="Reset" data-inline="true">
+	
+		<input type="submit" value="Invia" data-inline="true">
+	
+	</form>
+	
+	<h3>Form con radio buttons</h3>
+	
+	<form>
+	<fieldset data-role="controlgroup">
+	<legend>Scegli il tuo pet preferito</legend>
+	
+	<label for="cane">Cane</label>
+	
+	<input type="radio" name="pet" id="cane" value="cane">
+	
+	<label for="gatto">Gatto</label>
+	
+	<input type="radio" name="pet" id="gatto" value="gatto">
+	
+	</fieldset>
+	
+	
+	<input type="submit" value="Invia" data-inline="true">
+	
+	
+	</form>
+	
+	<h3>Form con check buttons</h3>
+	
+	
+	<form>
+	<fieldset data-role="controlgroup" data-type="horizontal">
+	<legend>Scegli il tuo pet preferito</legend>
+	
+	<label for="cane">Cane</label>
+	
+	<input type="checkbox" name="pet" id="cane" value="cane">
+	
+	<label for="gatto">Gatto</label>
+	
+	<input type="checkbox" name="pet" id="gatto" value="gatto">
+	
+	</fieldset>
+	
+	
+	<input type="submit" value="Invia" data-inline="true">
+	
+	
+	</form>
+	
+	<h3>Form in pop up</h3>
+	
+	<a href="#formPop" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left">Form Pop up</a>
+	<div data-role="popup" id="formPop" class="ui-content" style="min-width:350px;">
+	<form>
+	<fieldset class="ui-field-contain">
+	
+	<label for="colori">Scegli il colore</label>
+	<select name="colori" id="colori">
+	
+	<option value="red">Rosso</option>
+	<option value="green">Verde</option>
+	<option value="blue">Blue</option>
+	
+	</select>
+	</fieldset>
+	
+	<input type="submit" value="Invia" data-inline="true">
+	
+	</form></div>
+	
+	   </div>
+	   
+	   <div data-role="footer" data-position="fixed"><h4>&copy 2018</h4></div>
+	   </div>
+	   
+	   
+	    <!-- Quinta pagina - Grid System-->
+    <div id="grid" data-role="page">
+	   
+	   
+	   <div data-role="header"data-theme="b">
+	   <a href="#myMenu">Menu</a>
+	   <h1>Grid System</h1>
+	   
+	   
+	   </div>
+	   
+	   <div data-role="content">
+	   
+<h1>Il mio Grid System con JQuery Mobile</h1>
+
+<a data-role="button" href= "#bottoni" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn-inline ui-btn-icon-notext">Scheda precedente</a>
+<a href="#home" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left">Home</a>
+
+<h3>Multicolonna Grid A</h3>
+<div class="ui-grid-a">
+
+<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+</div>
+
+<h3>Multicolonna Grid B</h3>
+<div class="ui-grid-b">
+
+<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+</div>
+
+<h3>Multicolonna Grid C</h3>
+<div class="ui-grid-c">
+
+<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+<div class="ui-block-d"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+</div>
+
+<h3>Multicolonna Grid D</h3>
+<div class="ui-grid-d">
+
+<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+<div class="ui-block-d"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+<div class="ui-block-e"><div class="ui-bar ui-bar-a" style="height: 50px;">Testo di esempio</div></div>
+</div>
+
+	   </div>
+	   
+	   <div data-role="footer" data-position="fixed"><h4>&copy 2018</h4></div>
+	   </div>
+	   
+	   <!-- Dialog Page -->
+	  
+	  <div data-role="dialog" id="dlg-bottoni">
+	  
+	 <div data-role="header"><h1>Esempio di bottone</h1></div> 
+	 
+	 <div data-role="content">
+	 &lt;a data-role="button" href= "#dlg-bottoni" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn-inline ui-btn-icon-notext"&gt;Esempio di bottone notext&lt;/a&gt;
+	&lt;a data-role="button" href= "#dlg-bottoni" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-btn-inline ui-btn-icon-notext"&gt;Scheda seguente&lt/a&gt;
+	</div>
+	 
+	 <div data-role="footer"><h1>Questa è la mia app</h1></div>
+	  
+	  </div>
+	  
+	  <script>
+	  $(function () {
+    $("[data-role=header],[data-role=footer]").toolbar().enhanceWithin();
+    $("[data-role=panel]").panel().enhanceWithin();
+});
+
+$(document).on("pagecreate", function () {
+    $("[data-role=panel]").one("panelbeforeopen", function () {
+        var height = $.mobile.pageContainer.pagecontainer("getActivePage").outerHeight();
+        $(".ui-panel-wrapper").css("height", height + 1);
+    });
+});
+	  
+	  
+	  </script>
+	   
+	   
+	   
+    </body>
+</html>

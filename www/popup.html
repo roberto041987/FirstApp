@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-B">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scale=no, width=device=width">
+	<title>Pop up con jquery mobile</title>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<script>
+	$(document).on("mobileinit" , function(){
+		$.mobile.defaultPageTransition = "slidedown";
+	});
+	</script>
+	
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+h1.ui-title{
+	color:#ff6037;
+}
+a.ui-link{
+	text-decoration: none;
+}
+.ui-input-text input{
+	background: #ce6eef;
+	opacity: 0.6;
+}
+
+</style>
+
+
+
+</head>
+<body>
+
+<div data-role="content">
+<h1 class="ui-bar ui-bar-b ui-shadow ui-corner-all">Esempi di pop up</h1>
+<a href="#popSemplice" data-rel="popup" class="ui-btn ui-corner-all ui-btn-inline" data-transition="flip">Pop up</a>
+<div data-role="popup" id="popSemplice">
+
+<p>Sono un semplicissimo pop up</p>
+</div>
+
+<h2 class="ui-bar ui-bar-b ui-shadow ui-corner-all">Altro esempio di pop up</h2>
+
+<a href="#popImg" data-rel="popup" data-position-to="window" data-transition="fade"><img src="img/sushi.jpg" class="popphoto" style="width: 50%; opacity:0.5"></a>
+
+<div data-role="popup" id="popImg">
+<a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right ui-corner-all">Chiudi</a>
+<img src="img/sushi.jpg" class="popphoto" style="width: 100%;">
+</div>
+
+
+<h2 class="ui-bar ui-bar-b ui-shadow ui-corner-all">Altro esempio di pop up con didascalia</h2>
+
+<a href="#didImg" data-rel="popup" data-position-to="window" data-transition="fade"><img src="img/sushi.jpg" class="popphoto" style="width: 50%;"></a>
+
+<div data-role="popup" id="didImg" class="ui-content">
+<p>Io sono la didascalia della foto</p>
+<a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right ui-corner-all">Chiudi</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
